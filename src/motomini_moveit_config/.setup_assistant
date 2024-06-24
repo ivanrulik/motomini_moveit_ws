@@ -1,0 +1,25 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: motoman_motomini_support
+    relative_path: urdf/motomini.urdf
+  srdf:
+    relative_path: config/motoman_motomini.srdf
+  package_settings:
+    author_name: Ivan Rulik
+    author_email: ivan.rulik@icr247.com
+    generated_timestamp: 1719255478
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
+  modified_urdf:
+    xacros:
+      - control_xacro
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
